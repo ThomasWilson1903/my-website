@@ -1,0 +1,10 @@
+img{
+    display: block;
+    
+    max-width: 100%;
+    margin: 0 auto;
+    height: 360px;
+    width: 640px;
+    object-fit: contain;
+    object-position: left top;
+}

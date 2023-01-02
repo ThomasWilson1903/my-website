@@ -1,13 +1,56 @@
 body{
     font-family: Arial;
     background-color:#BFBFBF;
-    border: #36403A;
+    
     
 }
+
+#Text{
+ position: relative;
+ 
+}
+
 p{
     color: #36403A ;
 }
 a{
     text-decoration: none;
-    color: #36403A;
+    color:blueviolet;
+}
+#zagolovokNew{
+    position:static;
+    color:white;
+    z-index: 0;
+    padding: 10px;
+    width: 100%;
+    background-color:#36403A;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 40px;
+
+    
+    
+    
+}
+#controlNews{
+    position: relative;
+    color:36403A;
+    z-index: 0;
+    padding: 15px;
+    width: 100%;
+    background-color:#36403A;
+    top: 0px;
+    left: 0px;
+
+}
+#TestText{
+    
+    color: #0D0D0D;
+    border-style: solid;
+    border-color: #36403A;
+    background-color:#DCF2E6;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em
 }
