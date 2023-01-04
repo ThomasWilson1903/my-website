@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Уголок аудио</title>
+    <link rel="stylesheet" href="css/audioCorner.css">
 </head>
 <body>
-    <p><a href="index.html">На главную</a></p>
+    <p id="back"><a href="index.html">На главную</a></p>
+
+
     <p>dArtagnan feat. Patty Gurdy-Farewell-kissvk.com</p>
     <p>
         <audio controls>
@@ -21,6 +24,31 @@
             <source src="audio/dArtagnan-Neue Helden-kissvk.com.mp3"/>
         </audio>
     </p>
+    <p>
+        <audio id="player" src="audio/dArtagnan-Neue Helden-kissvk.com.mp3"></audio>
+        <div>
+            <button onclick="document.getElementById('player').play()">Воспроизведение</button>
+            <button onclick="document.getElementById('player').pause()">Пауза</button>
+            <button onclick="document.getElementById('player').volume+=0.1">Громкость +</button>
+            <button onclick="document.getElementById('player').volume-=0.1">Громкость -</button>
+        </div> 
+    </p>
+    <p>Запустим его на полную (Cranking it up to Eleven)
+        В последних нескольких шагах мы рассмотрели простейшую форму аудио в формате HTML5. Когда мы начинаем использовать аудио-тег с javascript, мы можем начать создание действительно интересных и полезных аудиоплееров. Давайте посмотрим, что может сделать для нас jQuery. Когда мы определили document ready в jQuery, мы можем создать новую звуковую переменную, чтобы держать наш аудиофайл таким простым:
+        
+        var myaudio = new Audio('mysong.mp3');
+        Это действительно настолько просто! Тогда, когда мы хотим выполнить действие над аудио, мы можем вызвать его, используя переменную 'myaudio'. Вот список действий, которые мы можем предпринять с переменной. Запомните это, мы будем использовать некоторые из них позже, когда создадим наш аудиоплеер.
+        
+        myaudio.play(); - This will play the music.
+        myaudio.pause(); - This will stop the music.
+        myaudio.duration; - Returns the length of the music track.
+        myaudio.currentTime = 0; - This will rewind the audio to the beginning.
+        myaudio.loop = true; - This will make the audio track loop.
+        myaudio.muted = true; - This will mute the track
+        Если вы хотите, чтобы функция была вызвана после завершения воспроизведения звука, вы можете использовать 'myaudio.addEventListener (' ended ', myfunc)' - это вызовет функцию 'myfunc ()', как только аудио закончится.
+        
+        </p>
+    
     
 </body>
 </html>
