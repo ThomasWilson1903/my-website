@@ -1,18 +1,4 @@
 body{
-    text-align: center;
     background-color: #ADCCD9;
-}
-p{
-    color: white;
-}
-#back{
-    /* position:fixed;
-    z-index: 21;
-    background-color: ;
-    color: #000;
-    
-    text-decoration: none; */
-    text-decoration: none;
-    color: #36403A;
-    
+    color: black;
 }

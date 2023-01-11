@@ -1,0 +1,47 @@
+.timer__items {
+    display: flex;
+    font-size: 48px;
+  }
+  .timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+  }
+  .timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+  }
+  .PlayGame{
+    text-decoration: none;
+    background-color:#5377A6;
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 20px;
+    font-size: 25px;
+    
+    
+  }
+  body{
+    background-color: #ADCCD9;
+  }
+  .img1 {
+    width:650px;
+    border:3px solid black;
+    }
+    .info1{
+        color: #5377A6;
+    }
